@@ -17,9 +17,9 @@ and the cluster of users have control of the other data as defined by the permis
 
 
 ## Pain Points to solve
-
-
-
+- Permissions need to be managed seperately per DB instance and per DB type in a distributed computing network
+- Hard to coordinate all of this across the different DBaaS providers too
+- Reduced developer productivity when working with all the permissions across the DBs
 
 
 ## Technical details
