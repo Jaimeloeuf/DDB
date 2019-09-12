@@ -50,3 +50,7 @@ Essentially you can connect all your apps to this permissions layer and connect 
 Meaning that instead of using the mySQL connector, you will use the "repo name"-mySQL connector, which is basically the mySQL connector with a wrapper over it to implement the permissions layer.
 Also if you do not want to use those, we recommend our very own distributed database software that you can use. It is essentially a database that has this permission layer already built in, so when you use it, you can just treat the permission layer as if it is the database directly.
 This will be a direct wrapping using the permissions layer, so that it will be "more secure" as there isn't any additional connection overhead to a database as this becomes the database.
+
+
+## License, Contributing and Author
+This Repo is made available under the MIT License. Please reach out [here](mailto:jaimeloeuf@gmail.com) or create a github issue if you have any questions or would like to contribute.  
