@@ -22,6 +22,11 @@ and the cluster of users have control of the other data as defined by the permis
 - Reduced developer productivity when working with all the permissions across the DBs
 
 
+## Use Case
+Instead of configuring all your different database in your polyglot persistence system to have the same permissions set and needing to learn all of them, this gives you a central control of the permissions, where you can control everything on this layer, improving developer productiviy.  
+This can also be used as a Standalone, Distributed State Replication Machine, which can be used in cases, where migrations of computing resources should be seperated from the data layer. An example would be the compute nodes of [torus-node]() where despite constant migration of compute nodes from cluster to cluster, data stays the same.  
+
+
 ## Technical details
 ### How to connect to the DB
 Using the API directly, or using a SDK that wraps over all the API.
@@ -45,9 +50,3 @@ Essentially you can connect all your apps to this permissions layer and connect 
 Meaning that instead of using the mySQL connector, you will use the "repo name"-mySQL connector, which is basically the mySQL connector with a wrapper over it to implement the permissions layer.
 Also if you do not want to use those, we recommend our very own distributed database software that you can use. It is essentially a database that has this permission layer already built in, so when you use it, you can just treat the permission layer as if it is the database directly.
 This will be a direct wrapping using the permissions layer, so that it will be "more secure" as there isn't any additional connection overhead to a database as this becomes the database.
-
-
-
-
-## Use Case
-So instead of configuring all your different database in your polyglot persistence system to have the same permissions set and needing to learn all of them, this gives you kinda of like a central control of the permissions, where you can control everything on this layer.
